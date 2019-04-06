@@ -1,0 +1,22 @@
+{
+  "name": "ZumWebWallet",
+  "version": "1.1.0",
+  "description": "Fully client side web wallet for ZumCoin",
+  "main": "index.js",
+  "dependencies": {
+    "localforage": "^1.7.2",
+    "typescript": "^2.9.2",
+    "workbox-build": "^3.4.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zumcoin/zum-webwallet.git"
+  },
+  "author": "gnock & ZumCoin",
+  "license": "BSD-3",
+  "bugs": {
+    "url": "https://github.com/zumcoin/zum-webwallet#issues"
+  },
+  "homepage": "https://github.com/zumcoin/zum-webwallet#readme"
+}
