@@ -45,7 +45,7 @@ namespace WebWallet.Controllers
                     //TODO: If there's an error, (wallet cache get's stuck), we need to re-create that segment of the chain somehow
                     //drop the cache file, and let it rebuild, and return the queries from the chain directly... 
                     //need some for of checking mechanism to ensure that each block in the segment wh're querying has at least one transaction
-                    using (var db = new LiteDatabase(string.Concat(AppContext.BaseDirectory, @"App_Data\", "transactions_", start, "-", end, ".db")))
+                    using (var db = new LiteDatabase(string.Concat(AppContext.BaseDirectory, @"App_Data/", "transactions_", start, "-", end, ".db")))
                     {
                         var transactions = db.GetCollection<CachedTx>("cached_txs");
                         var txs = transactions.Find(x => x.height >= startHeight && x.height <= endHeight).Distinct().ToList();
