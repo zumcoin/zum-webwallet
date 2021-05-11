@@ -41,7 +41,7 @@ class SendView extends DestructableView {
     @VueVar('') destinationAddressUser !: string;
     @VueVar('') destinationAddress !: string;
     @VueVar(false) destinationAddressValid !: boolean;
-    @VueVar('100.75') amountToSend !: string;
+    @VueVar('') amountToSend !: string;
     @VueVar(false) lockedForm !: boolean;
     @VueVar(true) amountToSendValid !: boolean;
     @VueVar('') paymentId !: string;
@@ -81,7 +81,7 @@ class SendView extends DestructableView {
         this.lockedForm = false;
         this.destinationAddressUser = '';
         this.destinationAddress = '';
-        this.amountToSend = '100.75';
+        this.amountToSend = '';
         this.destinationAddressValid = false;
         this.qrScanning = false;
         this.amountToSendValid = false;
